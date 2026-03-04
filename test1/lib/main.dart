@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const Text(
-              'NIM: 3124521048',
+              'NRP: 3124521048',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 20),
