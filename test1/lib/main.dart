@@ -44,6 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _resetCounter() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,10 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Muhammad Rozaq M',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const Text(
-              'NRP: 3124521048',
-              style: TextStyle(fontSize: 16),
-            ),
+            const Text('NRP: 3124521048', style: TextStyle(fontSize: 16)),
             const SizedBox(height: 20),
 
             const Text('You have pushed the button this many times:'),
@@ -86,6 +89,12 @@ class _MyHomePageState extends State<MyHomePage> {
             onPressed: _incrementCounter,
             tooltip: 'Increment',
             child: const Icon(Icons.add),
+          ),
+          const SizedBox(width: 10),
+          FloatingActionButton(
+            onPressed: _resetCounter,
+            tooltip: 'Decrement',
+            child: const Icon(Icons.restart_alt),
           ),
         ],
       ),
